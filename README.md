@@ -108,7 +108,7 @@ london temperature is: 18 °C
 Run the following command:
 ```sh
 cd scripts
-node multicall1.js
+node multicall2.js
 
 ```
 
