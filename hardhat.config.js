@@ -12,7 +12,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
     console.log(account.address);
   }
 });
-const PRIVATE_KEY = "c2347ee52e0e18311b31b4e5e87ea73caf787d8e06d38c1bbe967b8b4e2068b6";
+const PRIVATE_KEY = "Your private key";
 module.exports = {
   solidity: "0.7.3",
   networks: {
