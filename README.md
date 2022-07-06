@@ -32,7 +32,7 @@ npx hardhat run scripts/deploy.js --network  cronos-testnet3
 
 ## Assignment:
 
-#### Assignment 1: Read a smart contract.
+### Assignment 1: Read a smart contract.
 ```sh
 npx hardhat getCronosOracle --network cronos-mainnet
 ```
@@ -43,7 +43,7 @@ get CronosOracle BTC/USD latest Answer :2002612428571
 BTC latest price is 20026.12 USD
 ```
 
-#### Assignment 2: Write data to a smart contract.
+### Assignment 2: Write data to a smart contract.
 ```sh
 npx hardhat reportWeather --network cronos-testnet3
 ```
@@ -62,7 +62,7 @@ getWeather hongkong  temperature is: 30 °C
 getWeather london  temperature is: 15 °C
 ----------------------- - query data end ------------------------
 ```
-#### Additional Task
+### Additional Task
 
 **Question 1**: If the API returns the temperature in a decimal form (like 27.5 C),
     how to submit this decimal number to the smart contract while keeping its precision?
