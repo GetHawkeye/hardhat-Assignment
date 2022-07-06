@@ -33,6 +33,7 @@ npx hardhat run scripts/deploy.js --network  cronos-testnet3
 ## Assignment:
 
 ### Assignment 1: Read a smart contract.
+> Run the following command to read data from the smart contract.
 ```sh
 npx hardhat getCronosOracle --network cronos-mainnet
 ```
@@ -44,6 +45,7 @@ BTC latest price is 20026.12 USD
 ```
 
 ### Assignment 2: Write data to a smart contract.
+> Run the following command to write data to the smart contract.
 ```sh
 npx hardhat reportWeather --network cronos-testnet3
 ```
@@ -102,6 +104,13 @@ london temperature is: 18 °C
 ```
 
 2) The second solution is to import the @Makerdao /multicall.js toolkit and call the Aggregate or createWatcher methods. See **multicall1.js** or **multicall2.js** for the code implementation. 
+
+Run the following command:
+```sh
+cd scripts
+node multicall1.js
+
+```
 
 > The results are as follows：
 ```sh
