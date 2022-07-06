@@ -65,13 +65,13 @@ getWeather london  temperature is: 15 °C
 **Question 1**: If the API returns the temperature in a decimal form (like 27.5 C),
     how to submit this decimal number to the smart contract while keeping its precision?
 
-Answer：
-When the API of temperature is called, the returned result is multiplied by 1000 and saved to the contract.
-When the contract is read, the result is divided by 1000.
+> Answer：
+> When the API of temperature is called, the returned result is multiplied by 1000 and saved to the contract.
+> When the contract is read, the result is divided by 1000.
 
 **Question 2**: How to store a negative temperature while keeping the current smart contract interface unchanged?
 
-Answer：
+> Answer：
 
 
 **Question 3**: multicall
