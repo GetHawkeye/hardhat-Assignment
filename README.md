@@ -27,7 +27,7 @@ npx hardhat run scripts/deploy.js --network  cronos-testnet3
 ```sh
 npx hardhat getCronosOracle --network cronos-mainnet
 ```
-The results are as follows：
+  The results are as follows：
 ```sh
 Connect Contract 0xb3DF0a9582361db08EC100bd5d8CB70fa8579f4B is OK
 get CronosOracle BTC/USD latest Answer :2002612428571
@@ -38,7 +38,7 @@ BTC latest price is 20026.12 USD
 ```sh
 npx hardhat reportWeather --network cronos-testnet3
 ```
-The results are as follows：
+  The results are as follows：
 ```sh
 batchId is : 1657091807
 getWeather res:  Map(3) { 'shanghai' => 35, 'hongkong' => 30, 'london' => 15 }
@@ -54,11 +54,23 @@ getWeather london  temperature is: 15 °C
 ----------------------- - query data end ------------------------
 ```
 #### Additional Task
+
+Question 1: If the API returns the temperature in a decimal form (like 27.5 C),
+    how to submit this decimal number to the smart contract while keeping its precision?
+Answer：
+When the API of temperature is called, the returned result is multiplied by 1000 and saved to the contract.
+When the contract is read, the result is divided by 1000.
+
+Question 2: How to store a negative temperature while keeping the current smart contract interface unchanged?
+Answer：
+
+
+Question 3: multicall
 ```sh
 npx hardhat multicallWeather --network cronos-testnet3
 
 ```
-The results are as follows：
+  The results are as follows：
 ```sh
 Connect Contract 0x87fc3463eB5fBCe290d038a908Ec76Ee18DBC97B is OK
 multicallWeather result:
