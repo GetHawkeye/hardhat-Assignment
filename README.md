@@ -79,9 +79,10 @@ getWeather london  temperature is: 15 °C
 
 
 **Question 3**: multicall smart contract.
+
 There are two solutions to this answer.
 
-The first solution is to import the ethers.js toolkit to encode and decode the parameters
+1) The first solution is to import the ethers.js toolkit to encode and decode the parameters
 Call contract Multicall's aggregate method directly. See **multicallweather.js** for the code implementation. 
 
 Run the following command:
@@ -98,7 +99,7 @@ hongkong temperature is: 29 °C
 london temperature is: 18 °C
 ```
 
-The second solution is to import the @Makerdao /multicall.js toolkit and call the Aggregate or createWatcher methods. See **multicall1.js** or **multicall2.js** for the code implementation. 
+2) The second solution is to import the @Makerdao /multicall.js toolkit and call the Aggregate or createWatcher methods. See **multicall1.js** or **multicall2.js** for the code implementation. 
 
 > The results are as follows：
 ```sh
