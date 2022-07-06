@@ -78,7 +78,13 @@ getWeather london  temperature is: 15 °C
 > When the contract is read, the result is Minus 100,000,000.
 
 
-**Question 3**: multicall
+**Question 3**: multicall smart contract.
+There are two solutions to this answer.
+
+The first solution is to import the ethers.js toolkit to encode and decode the parameters
+Call contract Multicall's aggregate method directly. See **multicallweather.js** for the code implementation. 
+
+Run the following command:
 ```sh
 npx hardhat multicallWeather --network cronos-testnet3
 
@@ -92,3 +98,11 @@ hongkong temperature is: 29 °C
 london temperature is: 18 °C
 ```
 
+The second solution is to import the @Makerdao /multicall.js toolkit and call the Aggregate or createWatcher methods. See **multicall1.js** or **multicall2.js** for the code implementation. 
+
+> The results are as follows：
+```sh
+Update: shanghai temperature is 31
+Update: hongkong temperature is 29
+Update: london temperature is 18
+```
