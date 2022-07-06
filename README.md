@@ -21,7 +21,9 @@ npx hardhat compile
 npx hardhat run scripts/deploy.js --network  cronos-testnet3
 ```
 
-4、Run Task:
+### 4、Run Task:
+
+#### Assignment 1: Read a smart contract.
 ```sh
 npx hardhat getCronosOracle --network cronos-mainnet
 ```
@@ -32,6 +34,7 @@ get CronosOracle BTC/USD latest Answer :2002612428571
 BTC latest price is 20026.12 USD
 ```
 
+#### Assignment 2: Write data to a smart contract.
 ```sh
 npx hardhat reportWeather --network cronos-testnet3
 ```
@@ -49,8 +52,8 @@ getWeather shanghai  temperature is: 35 °C
 getWeather hongkong  temperature is: 30 °C
 getWeather london  temperature is: 15 °C
 ----------------------- - query data end ------------------------
-```sh
-
+```
+#### Additional Task
 ```sh
 npx hardhat multicallWeather --network cronos-testnet3
 
