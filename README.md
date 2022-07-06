@@ -12,7 +12,7 @@ npm install
 ```
 2、Editor **hardhat.config.js** file
 
-Change the value of the **PRIVATE_KEY** variable to your private key
+> Change the value of the **PRIVATE_KEY** variable to your private key
 
 3、Compiling contracts:
 ```sh
@@ -26,7 +26,7 @@ npx hardhat run scripts/deploy.js --network  cronos-testnet3
 
 5、Editor **multicallWeather.js** file
 
-Change the value of  **proxyAddress** variable to the contract address deployed in step 4
+> Change the value of  **proxyAddress** variable to the contract address deployed in step 4
 
 ## Assignment:
 
@@ -34,7 +34,7 @@ Change the value of  **proxyAddress** variable to the contract address deployed 
 ```sh
 npx hardhat getCronosOracle --network cronos-mainnet
 ```
-  The results are as follows：
+> The results are as follows：
 ```sh
 Connect Contract 0xb3DF0a9582361db08EC100bd5d8CB70fa8579f4B is OK
 get CronosOracle BTC/USD latest Answer :2002612428571
@@ -45,7 +45,7 @@ BTC latest price is 20026.12 USD
 ```sh
 npx hardhat reportWeather --network cronos-testnet3
 ```
-  The results are as follows：
+> The results are as follows：
 ```sh
 batchId is : 1657091807
 getWeather res:  Map(3) { 'shanghai' => 35, 'hongkong' => 30, 'london' => 15 }
@@ -79,7 +79,7 @@ Answer：
 npx hardhat multicallWeather --network cronos-testnet3
 
 ```
-  The results are as follows：
+> The results are as follows：
 ```sh
 Connect Contract 0x87fc3463eB5fBCe290d038a908Ec76Ee18DBC97B is OK
 multicallWeather result:
