@@ -1,7 +1,7 @@
 # hardhat-Assignment
 
 
-## Quick start
+## Environment configuration
 1、The first things you need to do are cloning this repository and installing its
 dependencies:
 
@@ -10,18 +10,25 @@ git clone https://github.com/GetHawkeye/hardhat-Assignment.git
 cd hardhat-Assignment
 npm install
 ```
+2、Editor **hardhat.config.js** file
 
-2、Compiling contracts:
+Change the value of the **PRIVATE_KEY** variable to your private key
+
+3、Compiling contracts:
 ```sh
 npx hardhat compile
 ```
 
-3、Deploy contracts on the cronos-testnet3 network:
+4、Deploy contracts on the cronos-testnet3 network:
 ```sh
 npx hardhat run scripts/deploy.js --network  cronos-testnet3
 ```
 
-### 4、Run Task:
+5、Editor **multicallWeather.js** file
+
+Change the value of  **proxyAddress** variable to the contract address deployed in step 4
+
+## Assignment:
 
 #### Assignment 1: Read a smart contract.
 ```sh
@@ -55,19 +62,19 @@ getWeather london  temperature is: 15 °C
 ```
 #### Additional Task
 
-Question 1: If the API returns the temperature in a decimal form (like 27.5 C),
+**Question 1**: If the API returns the temperature in a decimal form (like 27.5 C),
     how to submit this decimal number to the smart contract while keeping its precision?
 
 Answer：
 When the API of temperature is called, the returned result is multiplied by 1000 and saved to the contract.
 When the contract is read, the result is divided by 1000.
 
-Question 2: How to store a negative temperature while keeping the current smart contract interface unchanged?
+**Question 2**: How to store a negative temperature while keeping the current smart contract interface unchanged?
 
 Answer：
 
 
-Question 3: multicall
+**Question 3**: multicall
 ```sh
 npx hardhat multicallWeather --network cronos-testnet3
 
