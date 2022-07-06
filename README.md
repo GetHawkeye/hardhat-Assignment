@@ -74,6 +74,8 @@ getWeather london  temperature is: 15 °C
 **Question 2**: How to store a negative temperature while keeping the current smart contract interface unchanged?
 
 > Answer：
+> When the API of temperature is called, The result is stripped of the negative sign Plus 100,000,000 and saved to the contract.
+> When the contract is read, the result is Minus 100,000,000.
 
 
 **Question 3**: multicall
