@@ -78,7 +78,9 @@ getWeather london  temperature is: 15 °C
 > When the contract is read, the result is Minus 100,000,000.
 
 
-**Question 3**: multicall smart contract.
+**Question 3**: During the "Step 3" in the task, it will take 3 JSON-RPC calls to
+    read weather info for 3 cities from smart contract. Is it possbile to reduce
+    that to only one request to get all the data back?
 
 There are two solutions to this answer.
 
