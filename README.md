@@ -1,5 +1,6 @@
 # hardhat-Assignment
 
+This project is a hardhat built project, included how to deploy a Multicall contract, Multicall contract, Read a smart contract, Write data to a smart contract.
 
 ## Environment configuration
 1、The first things you need to do are cloning this repository and installing its
