@@ -15,7 +15,7 @@ async function test() {
   // The target Contract Address
   let targetContractAddress = "0xCD156974a006BEB8D67a7C1155FfF5c141C6e82e";
 
-  let privateKey = 'c2347ee52e0e18311b31b4e5e87ea73caf787d8e06d38c1bbe967b8b4e2068b6';
+  let privateKey = '你的私钥';
 
   let wallet = new ethers.Wallet(privateKey, provider);
   // Connect Contract
